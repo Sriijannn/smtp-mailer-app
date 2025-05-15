@@ -33,8 +33,8 @@ const App: React.FC = () => {
       try {
         // Compose final email body per recipient
         const finalBody = greeting ? `${greeting}\n\n${body}` : body;
-
-        await axios.post("http://127.0.0.1:5000/send-emails", {
+        // https://smtp-app-backend.onrender.com
+        await axios.post("https://smtp-app-backend.onrender.com/send-emails", {
           gmail_user: gmailUser,
           gmail_app_password: appPassword,
           to_email: email,
