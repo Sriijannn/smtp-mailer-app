@@ -136,7 +136,7 @@ export default function EmailSender() {
           Email Campaign Sender
         </h1>
         <p className="text-gray-500 mt-1">
-          Send personalized emails with real-time status updates
+          Send personalized emails to multiple users.
         </p>
       </header>
 
